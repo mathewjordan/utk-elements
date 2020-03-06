@@ -18,7 +18,7 @@ class Elements extends Component {
     }
 
     fetchElementsData() {
-        
+
         fetch(endpoint, {
             headers: {
                 'Content-Type': 'application/json',
@@ -37,8 +37,8 @@ class Elements extends Component {
     }
 
     iterateItems(items) {
-        return items.map((item) => (
-            <li>
+        return items.map((item, index) => (
+            <li key={index}>
                 {item.PID}
             </li>
         ));
