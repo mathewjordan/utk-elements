@@ -18,6 +18,7 @@ class Elements extends Component {
     }
 
     fetchElementsData() {
+        
         fetch(endpoint, {
             headers: {
                 'Content-Type': 'application/json',
